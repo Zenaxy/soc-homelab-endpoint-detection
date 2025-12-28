@@ -1,15 +1,77 @@
-# soc-homelab-endpoint-detection
-# Endpoint Attack Detection using Sysmon &amp; Splunk (SOC Home Lab)  This project demonstrates how endpoint attack activities generate telemetry and how those events can be detected and analyzed using Sysmon and Splunk in a SOC-style home lab environment.
+# SOC Homelab – Malware Detection with Splunk & Sysmon
 
+## 📌 Overview
+This project demonstrates a basic SOC (Security Operations Center) homelab where malicious activity is generated and detected using **Splunk SIEM** and **Sysmon** on a Windows endpoint.
 
-## 📌 Project Overview
+The goal of this lab is **not exploitation**, but to understand how attacker activity generates telemetry and how defenders analyze it.
 
-This project focuses on **detecting malicious endpoint activity** rather than exploiting systems.
+---
 
-Using a controlled home lab, I simulated common attack behaviors such as network scanning and reverse TCP malware execution to observe the telemetry generated on a Windows endpoint and analyze it using Splunk.
+## 🧪 Lab Environment
 
-The main goal is to understand:
-- What logs are generated during an attack
-- How to analyze those logs in Splunk
-- How to build simple detection logic from endpoint telemetry
+### Attacker Machine
+- OS: Kali Linux
+- Role: Simulated attacker
 
+### Target Machine
+- OS: Windows 10
+- Tools: Sysmon, Splunk Universal Forwarder
+
+### SIEM
+- Splunk Enterprise
+- Index: `endpoint`
+
+### Network Configuration
+- Virtual Machine Network: **Internal / Host-Only**
+- Purpose: Isolated environment for safe testing
+
+---
+
+## 🔧 Tools Used
+- Splunk Enterprise
+- Splunk Add-on for Sysmon
+- Sysmon (Process & Network logging)
+- Nmap
+- Metasploit (msfvenom – lab use only)
+
+---
+
+## 🎯 Attack Simulation
+The following activities were performed to generate telemetry:
+- Network scanning from attacker machine
+- Execution of a simulated malicious executable
+- Establishment of a reverse TCP connection
+- Post-exploitation command execution
+
+---
+
+## 🔍 Detection & Analysis
+Telemetry generated from the attack was analyzed in Splunk, focusing on:
+- Process creation (Sysmon Event ID 1)
+- Network connections (Sysmon Event ID 3)
+- Parent-child process relationships
+- Suspicious command execution
+
+Detailed analysis can be found in:
+➡️ `analysis/detection-analysis.md`
+
+---
+
+## 📸 Screenshots
+Screenshots are provided to demonstrate:
+- Lab topology
+- Log ingestion into Splunk
+- Malicious process execution
+- Network connections
+- Process relationships
+
+---
+
+## 🚨 Disclaimer
+This project is for **educational and defensive security purposes only**.  
+All testing was performed in an isolated lab environment.
+
+---
+
+## 👤 Author
+SOC Analyst (Entry Level)  
