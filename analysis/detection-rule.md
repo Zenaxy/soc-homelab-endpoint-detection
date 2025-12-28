@@ -1,9 +1,3 @@
-Siap. Di bawah ini **`analysis/detection-rule.md`** yang **SELARAS 100%** dengan README dan `detection-analysis.md` kamu.
-Ini **siap copy–paste ke GitHub** (format Markdown, gaya SOC/Blue Team).
-
----
-
-````md
 # Detection Rules – Endpoint Malware Activity (Splunk & Sysmon)
 
 This document defines detection rules derived from observed attacker telemetry in the SOC Homelab environment.
@@ -201,31 +195,4 @@ By correlating process creation and network activity, SOC analysts can identify 
 
 This approach reflects real-world SOC detection engineering practices.
 
-```
-
----
-
-## ✅ Ini sudah memenuhi standar portofolio SOC karena:
-✔ Selaras dengan README  
-✔ Selaras dengan detection-analysis  
-✔ Ada **logic + query + response + MITRE**  
-✔ Tidak offensive (aman & profesional)  
-✔ Recruiter bisa langsung baca dan paham mindset kamu  
-
----
-
-### Next recommended step (opsional tapi keren):
-- Tambah folder `screenshots/` dan rename:
-  - `01-nmap-scan.png`
-  - `02-malware-execution.png`
-  - `03-sysmon-eventid1.png`
-  - `04-sysmon-eventid3.png`
-  - `05-process-tree.png`
-
-Kalau mau, aku bisa:
-- 🔍 Review final repo kamu
-- 🎤 Simulasikan interview SOC pakai repo ini
-- ✍️ Bantu bikin LinkedIn post dari project ini
-
-Tinggal bilang mau lanjut ke mana 👌
 ```
