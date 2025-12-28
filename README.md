@@ -77,19 +77,18 @@ Detection logic and rules are documented here:
 
 ---
 
-## 📸 Screenshots Included
-Screenshots are provided to demonstrate:
-- Lab topology
-- Splunk log ingestion
-- Suspicious process execution
-- Network connections
-- Process tree analysis
-
----
 
 ## 🚨 Disclaimer
 This project is for **educational and defensive security purposes only**.  
 No real-world systems were targeted.  
 All testing was performed in an **isolated virtual lab environment**.
+
+---
+
+📘 What I Learned
+- How attacker activity translates into endpoint telemetry
+- How to analyze parent-child process relationships
+- Why context is critical in SOC detections
+- How to document detection logic clearly
 
 ---
